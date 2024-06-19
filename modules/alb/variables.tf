@@ -1,27 +1,39 @@
 variable "OU" {
-  type = string
+  description = "Organizational Unit"
+  type        = string
 }
 
 variable "provider_id" {
-  type = string
+  description = "Provider ID"
+  type        = string
 }
 
 variable "stage" {
-    type = string
+  description = "Stage (e.g., dev, prod)"
+  type        = string
 }
 
 variable "vpc_id" {
-    type = string
+  description = "VPC ID"
+  type        = string
 }
 
 variable "security_group_id" {
-  type = string
+  description = "Security Group ID"
+  type        = string
 }
 
 variable "public_subnet_id" {
-    type = string
+  description = "Public Subnet ID"
+  type        = string
 }
 
 variable "private_subnet_id" {
-    type = string
+  description = "Private Subnet ID"
+  type        = string
+}
+
+variable "certificate_arn" {
+  description = "ARN of the SSL certificate"
+  type        = string
 }
