@@ -1,19 +1,24 @@
 variable "OU" {
-  type = string
+  description = "Organizational Unit"
+  type        = string
 }
 
 variable "provider_id" {
-  type = string
+  description = "Provider ID"
+  type        = string
 }
 
 variable "stage" {
-  type = string
+  description = "Stage (e.g., dev, prod)"
+  type        = string
 }
 
 variable "instance_class" {
-  type = string
+  description = "DB Instance Class"
+  type        = string
 }
 
 variable "region" {
-  type = string
+  description = "AWS Region"
+  type        = string
 }
